@@ -35,8 +35,8 @@ MEDIA QUERIES
 
 html {
   font-size: 16px; /* 16(default for all browsers)= 1.125em */
-  line-height: 18px; /* 20px/16= 1.25*/
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 24px; /* 20px/16= 1.25*/
+  font-family: "Glacial Indifference", sans-serif;
   background-color: rgb(130, 12, 2);
   color: rgb(255, 255, 255);
   padding: 20px; /* 20px/16= 1.25*/
@@ -58,7 +58,6 @@ img {
 
 h1,
 h2,
-h3,
 h4 {
   color: #EFA93F;
   font-family: "Bodoni FLF", serif;
@@ -85,7 +84,7 @@ h2 {
 
 h3 {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   padding-bottom: 1em;
 }
 
