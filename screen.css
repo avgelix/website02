@@ -1,0 +1,105 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+
+/* 1. Base Styles:
+Selectrors: element (ex: h1);
+Styles: typography, colors, etc...
+*/
+
+/* 2. Layout Rules:
+Selectors: IDs, possibly classes
+Styles: spacing, layout, alignment
+*/
+
+/* 3. Module Rules:
+Selectors: classes, possibly IDs
+Styles: alignment, colors, special, repeating stuff
+*/
+
+/* 4. State Rules:
+Selectors: classes FROM JAVASCRIPT
+Styles: anything.
+MEDIA QUERIES
+*/
+
+/* Begin site styles below */
+
+html {
+  font-size: 16px; /* 16(default for all browsers)= 1.125em */
+  line-height: 18px; /* 20px/16= 1.25*/
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: rgb(130, 12, 2);
+  color: rgb(255, 255, 255);
+  padding: 20px; /* 20px/16= 1.25*/
+}
+
+h1,
+h2,
+ul,
+p,
+article {
+  padding-bottom: 1.25em; /* 20px/16= 1.25*/
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(237, 168, 149);
+}
+
+a {
+  color: rgb(222, 63, 36);
+  font-size: 12px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.758em; /* 28.125px/16= 1.758*/
+  line-height: 1.875em; /*30/16= 1,875*/
+}
+
+h2 {
+  font-variant: small-caps;
+  font-weight: bolder;
+  font-size: 1.406em; /*22./16= 1.406*/
+  padding-top: 1.25em;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 1em;
+}
+
+h4 {
+  font-weight: bolder;
+  font-size: 14px;
+  padding-bottom: 0.3em;
+}
+
+footer,
+.footer {
+  font-style: italic;
+  font-size: 0.72em; /* 11.52px/16= 0.72*/
+}
+
+#website-navigation li {
+  background-color: white;
+  color: black;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+}
