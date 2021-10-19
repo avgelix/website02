@@ -30,6 +30,9 @@ MEDIA QUERIES
 
 /* Begin site styles below */
 
+/*Colors I'm using: https://www.schemecolor.com/ruby-logo-colors.php */
+/*Yellow: #EFA93F*/
+
 html {
   font-size: 16px; /* 16(default for all browsers)= 1.125em */
   line-height: 18px; /* 20px/16= 1.25*/
@@ -57,10 +60,12 @@ h1,
 h2,
 h3,
 h4 {
-  color: rgb(237, 168, 149);
+  color: #EFA93F;
+  font-family: "Bodoni FLF", serif;
 }
 
-a {
+a,
+.h-card li{
   color: rgb(222, 63, 36);
   font-size: 12px;
 }
