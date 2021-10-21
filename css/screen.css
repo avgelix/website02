@@ -31,12 +31,13 @@ MEDIA QUERIES
 /* Begin site styles below */
 
 /*Colors I'm using: https://www.schemecolor.com/ruby-logo-colors.php */
-/*Yellow: #EFA93F*/
+/*Yellow: #EFA93F*
+Pink: #eda895*/
 
 html {
   font-size: 16px; /* 16(default for all browsers)= 1.125em */
   line-height: 24px; /* 20px/16= 1.25*/
-  font-family: "Glacial Indifference", sans-serif;
+  font-family: "Glacial Indifference", "Open Sans", sans-serif;
   background-color: rgb(130, 12, 2);
   color: rgb(255, 255, 255);
   padding: 20px; /* 20px/16= 1.25*/
@@ -60,13 +61,15 @@ h1,
 h2,
 h4 {
   color: #EFA93F;
-  font-family: "Bodoni FLF", serif;
+  font-family: Georgia, serif;
 }
 
 a,
-.h-card li{
-  color: rgb(222, 63, 36);
-  font-size: 12px;
+.h-card li,
+.date-location-duration li{
+  color: #EFA93F;
+  font-size: 14px;
+  list-style: none;
 }
 
 h1 {
@@ -94,6 +97,15 @@ h4 {
   padding-bottom: 0.3em;
 }
 
+li {
+  list-style: circle;
+  /*padding: 10px;*/
+}
+
+figure {
+  padding-top: 30px;
+}
+
 footer,
 .footer {
   font-style: italic;
@@ -102,8 +114,70 @@ footer,
 
 #website-navigation li {
   background-color: white;
-  color: black;
-  display: inline-block;
+  display: inline-flex;
   padding: 10px;
   margin: 10px;
+}
+
+#page-navigation li {
+  font-size: 16px;
+  list-style: none;
+  display: block;
+  margin: 10px;
+  background-color: #EFA93F;
+  width: 50%;
+}
+
+
+#education,
+#awards,
+#digital-media,
+#design {
+  display: block;
+  background-color: #EFA93F;
+}
+
+#education h2,
+#education .date-location-duration li,
+#awards h2,
+#awards a,
+#digital-media  h2,
+#digital-media .date-location-duration li,
+#digital-media a,
+#design h2,
+#design .date-location-duration li,
+#website-navigation a,
+#page-navigation a,
+#game-design h4,
+figcaption {
+  color: rgb(130, 12, 2);
+}
+
+
+
+.studies,
+.work-title,
+.poem li {
+  list-style: none;
+}
+
+.image li {
+  list-style: none;
+}
+/*nav {
+padding: 1.25em;
+}*/
+
+.poem li {
+  font-style: italic;
+}
+
+ul,
+ol {
+  padding-bottom: 15px;
+}
+
+section,
+article {
+padding: 20px;
 }
