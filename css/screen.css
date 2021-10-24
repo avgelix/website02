@@ -34,12 +34,16 @@ MEDIA QUERIES
 /*Yellow: #EFA93F*
 Pink: #eda895*/
 
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-size: 16px; /* 16(default for all browsers)= 1.125em */
   line-height: 24px; /* 20px/16= 1.25*/
   font-family: "Glacial Indifference", "Open Sans", sans-serif;
-  margin: 30px; /* 20px/16= 1.25*/
+  /*margin: 30px; /* 20px/16= 1.25*/
+  padding: 2em;
   background-color: rgb(130, 12, 2);
   color: rgb(255, 255, 255);
 }
@@ -54,6 +58,7 @@ article {
 
 img {
   display: block;
+  padding: 0em;
   max-width: 70%;
 }
 
@@ -114,58 +119,23 @@ figure {
   padding-top: 30px;
 }
 
+ul,
+ol {
+  padding-bottom: 15px;
+  margin-left: 1.5em;
+}
+
+section,
+article {
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
 footer,
 .footer {
   font-style: italic;
   font-size: 0.72em; /* 11.52px/16= 0.72*/
 }
-
-#website-navigation li {
-  background-color: white;
-  display: inline-flex;
-  padding: 10px;
-}
-
-#page-navigation li {
-  font-size: 16px;
-  list-style: none;
-  display: block;
-  margin: 10px;
-  background-color: #EFA93F;
-  width: 50%;
-}
-
-
-#education,
-#awards,
-#fiction,
-#academic-essays,
-#digital-media,
-#design {
-  display: block;
-  background-color: #EFA93F;
-}
-
-#education h2,
-#education .date-location-duration li,
-#awards h2,
-#awards a,
-#fiction h4,
-#academic-essays h4,
-#digital-media  h2,
-#digital-media .date-location-duration li,
-#digital-media a,
-#design h2,
-#design .date-location-duration li,
-#website-navigation a,
-#page-navigation a,
-#game-design h4,
-figcaption,
-.fiction-description {
-  color: rgb(130, 12, 2);
-}
-
-
 
 .studies,
 .work-title,
@@ -188,22 +158,69 @@ padding: 1.25em;
   color: #EFA93F;
 }
 
-ul,
-ol {
-  padding-bottom: 15px;
-}
-
-section,
-article {
-padding: 20px;
-}
-
 #profile-pic {
-  display: block;
   min-width: 180px;
-  margin: 0em;
-  padding: 0em;
 }
+#description {
+  padding-top: 0em;
+}
+#website-navigation li {
+  background-color: white;
+  display: inline-flex;
+  padding: 10px;
+}
+
+#website-navigation ul,
+#page-navigation ul,
+#contact-info {
+  margin-left: 0em;
+}
+
+#page-navigation li {
+  font-size: 16px;
+  list-style: none;
+  display: block;
+  margin: 10px;
+  background-color: #EFA93F;
+  width: 50%;
+  padding-left: 0em;
+}
+
+#birth-place,
+#education,
+#current-location,
+#love,
+#awards,
+#fiction,
+#academic-essays,
+#digital-media,
+#design {
+  background-color: #EFA93F;
+  margin-left: -2em;
+  margin-right: -2em;
+  margin-bottom: 2em;
+  padding: 2em;
+}
+
+#education h2,
+#education .date-location-duration li,
+#awards h2,
+#awards a,
+#fiction h4,
+#academic-essays h4,
+#digital-media  h2,
+#digital-media .date-location-duration li,
+#digital-media a,
+#design h2,
+#design .date-location-duration li,
+#website-navigation a,
+#page-navigation a,
+#game-design h4,
+figcaption,
+.fiction-description {
+  color: rgb(130, 12, 2);
+}
+
 
 @media screen and (min-width: 700px) {
     body {
@@ -211,11 +228,81 @@ padding: 20px;
       margin-left: 15%;
       margin-right: 15%;
     }
+
     p, li, a {
       max-width: 80%;
     }
+
+    #birth-place,
+    #education,
+    #current-location,
+    #love,
+    #awards,
+    #fiction,
+    #academic-essays,
+    #digital-media,
+    #design {
+      background-color: #EFA93F;
+      margin-left: -30%;
+      margin-right: -27%;
+      padding-left: 29%;
+      padding-right: 29%;
+    }
+
+  /*  #profile-pic {
+      float: left;
+      max-width: 200px;
+      display: block;
+      margin-right: 2em;
+    }
+
+    #description {
+      padding-top: 7em;
+      padding-bottom: 10em;
+    }*/
+
+    .intro {
+      display: grid;
+      margin-right: -15em;
+      margin-bottom: 8em;
+      grid-template-columns: 1fr 1fr;
+    }
+
     #profile-pic {
-      float: right;
-      max-width: 300px;
+        max-width: 200px;
+
+      }
+
+      #description {
+        padding-top: 7em;
+        padding-bottom: 7em;
+      }
+
+    #fiction p,
+    #academic-essays p {
+      text-align: justify;
+    }
+    #journalism article {
+      column-count: 2;
+      column-width: 280px;
     }
 }
+    /*#profile-pic {
+      float: right;
+      max-width: 300px;
+      display: block;
+      background-color: black;
+      margin-left: -28.5%;
+      margin-right: -28.5%;
+    }
+
+    #description {
+      background-color: black;
+      display: block;
+      color: #EFA93F;
+      margin-left: -28.5%;
+      margin-right: -28.5%;
+      padding-bottom: 20em;
+      margin-bottom: 1em;
+    }
+*/
