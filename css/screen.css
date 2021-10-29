@@ -49,7 +49,6 @@ html {
 }
 
 h1,
-h2,
 ul,
 p,
 article {
@@ -77,9 +76,8 @@ h4 {
 }
 
 li {
-  padding: none;
+  padding: 0em;
   list-style: circle;
-  /*padding: 10px;*/
 }
 
 
@@ -93,13 +91,13 @@ h2 {
   font-variant: small-caps;
   font-weight: bolder;
   font-size: 1.406em; /*22./16= 1.406*/
-  padding-top: 1.25em;
+  padding-top: 1em;
 }
 
 h3 {
   font-weight: bold;
   font-size: 18px;
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
 }
 
 h4 {
@@ -112,17 +110,16 @@ figure {
   padding-top: 30px;
 }
 
-ul,
-ol {
-  padding-bottom: 15px;
-  margin-left: 1.5em;
+/*header {
+  padding-bottom: 2em;
+} */
+
+article,
+section {
+  padding-bottom: 2em;
+  padding-top: 2em;
 }
 
-section,
-article {
-  padding-bottom: 20px;
-  padding-top: 20px;
-}
 
 a,
 .h-card li,
@@ -134,22 +131,25 @@ a,
 
 footer,
 .footer {
+  margin: -2em;
   font-style: italic;
   font-size: 0.72em; /* 11.52px/16= 0.72*/
 }
 
-.studies,
-.work-title,
-.poem li {
-  list-style: none;
+#website-footer {
+  margin-top: 2em;
 }
 
+header > h1 {
+  padding-bottom: 0.5em;
+}
+
+.studies,
+.work-title,
+.poem li,
 .image li {
   list-style: none;
 }
-/*nav {
-padding: 1.25em;
-}*/
 
 .poem li {
   font-style: italic;
@@ -157,18 +157,18 @@ padding: 1.25em;
 
 .poem-description {
   color: #EFA93F;
+  padding-top: 1.25em;
 }
 
-#profile-pic {
-  min-width: 180px;
+
+#portfolio > body > header {
+  padding-bottom: 2em;
 }
-#description {
-  padding-top: 0em;
-}
+
 #website-navigation li {
   background-color: white;
-  display: inline-flex;
   padding: 10px;
+  display: inline-flex;
 }
 
 #website-navigation ul,
@@ -181,14 +181,16 @@ padding: 1.25em;
   font-size: 16px;
   list-style: none;
   display: block;
-  margin: 10px;
+  margin-bottom: 10px;
   background-color: #EFA93F;
-  width: 50%;
-  padding-left: 0em;
+  width: 80%;
+  padding-left: 1em;
+  border-radius: 2em;
 }
 
 #birth-place,
 #education,
+#intro-education,
 #current-location,
 #love,
 #awards,
@@ -199,8 +201,9 @@ padding: 1.25em;
   background-color: #EFA93F;
   margin-left: -2em;
   margin-right: -2em;
-  margin-bottom: 2em;
   padding: 2em;
+  padding-bottom: 0em;
+  margin-top:0em;
 }
 
 #education h2,
@@ -223,59 +226,117 @@ figcaption,
 }
 
 
+#intro > h2 {
+  font-style: italic;
+  font-family: "Glacial Indifferent";
+  letter-spacing: 2px;
+  font-size: 18px;
+  padding-top: 0em;
+  text-align: center;
+}
+
+#profile-pic {
+  min-width: 180px;
+  border-radius: 10em;
+}
+
+#profile-pic,
+#description {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#education {
+  margin-top: 3em;
+}
+
+#credits > h1 {
+  color: white;
+  margin-top: 1em;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2em;
+  letter-spacing: 0.3em;
+  font-family: Times;
+  text-shadow: 1px 3px black;
+  padding-bottom: 0em;
+}
+
+#credits > section > h3 {
+  padding-bottom: 0em;
+}
+
+
 @media screen and (min-width: 700px) {
+
   body {
     display: block;
-    margin-left: 15%;
-    margin-right: 15%;
+    padding-left: 0em;
+    padding-right: 0em;
+  /*  width: 80%;
+    margin-left: auto;
+    margin-right: auto; */
   }
 
-  p, li, a {
+  header {
+    margin-top: 2em;
+  }
+
+/*  p, li, a {
     max-width: 80%;
+  } */
+  #work-experience,
+  #poetry,
+  #journalism,
+  #programming,
+  #research,
+  #family,
+  #passions,
+  #do,
+  #future {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: -2em;
+    margin-right: -2em;
+  }
+
+  #writing-title {
+    padding-left: 10%;
+    margin-left: -2em;
   }
 
   #birth-place,
+  #intro-education,
   #education,
   #current-location,
   #love,
   #awards,
-  #fiction,
-  #academic-essays,
   #digital-media,
-  #design {
+  #design,
+  #fiction,
+  #academic-essays {
     background-color: #EFA93F;
-    margin-left: -30%;
+    padding-left: 10%;
+    padding-right: 10%;
+  /*  margin-left: -30%;
     margin-right: -27%;
     padding-left: 29%;
-    padding-right: 29%;
-  }
-
-  /*  #profile-pic {
-      float: left;
-      max-width: 200px;
-      display: block;
-      margin-right: 2em;
-    }
-
-    #description {
-      padding-top: 7em;
-      padding-bottom: 10em;
-    }*/
-
-  .intro {
-    display: grid;
-    margin-right: -15em;
-    margin-bottom: 8em;
-    grid-template-columns: 1fr 1fr;
+    padding-right: 29%;*/
   }
 
   #profile-pic {
-    max-width: 200px;
+    border-radius: 14em;
+    max-width: 400px;
   }
 
-  #description {
-    padding-top: 7em;
-    padding-bottom: 7em;
+  #credits > h1 {
+    padding-top: 2em;
+    font-size: 3em;
+  }
+
+  #credits > section > h3 {
+    text-align: center;
+    padding-bottom: 0em;
   }
 
   #fiction p,
@@ -288,6 +349,35 @@ figcaption,
     column-width: 280px;
   }
 }
+
+/*  #profile-pic {
+    float: left;
+    max-width: 200px;
+    display: block;
+    margin-right: 2em;
+  }
+
+  #description {
+    padding-top: 7em;
+    padding-bottom: 10em;
+  }*/
+
+/*  .intro {
+  display: grid;
+  margin-right: -15em;
+  margin-bottom: 8em;
+  grid-template-columns: 1fr 1fr;
+}
+
+#profile-pic {
+  max-width: 200px;
+}
+
+#description {
+  padding-top: 7em;
+  padding-bottom: 7em;
+}
+*/
     /*#profile-pic {
       float: right;
       max-width: 300px;
@@ -307,3 +397,127 @@ figcaption,
       margin-bottom: 1em;
     }
 */
+
+@media screen and (min-width: 1000px) {
+/*  html {
+    padding: 0em;
+  }
+
+  body {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  body {
+    display: block;
+    padding-left: 0em;
+    padding-right: 0em;
+  /*  width: 80%;
+    margin-left: auto;
+    margin-right: auto; */
+  }
+
+  header {
+    margin-top: 2em;
+  }
+
+/*  p, li, a {
+    max-width: 80%;
+  } */
+
+
+  #page-navigation li {
+    margin-left: 0em;
+  }
+
+  #work-experience,
+  #poetry,
+  #journalism,
+  #programming,
+  #research,
+  #page-navigation,
+  aside,
+  #family,
+  #passions,
+  #do,
+  #future {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-left: -2em;
+    margin-right: -2em;
+  }
+
+  #writing-title {
+    padding-left: 20%;
+    margin-left: -2em;
+  }
+
+  #birth-place,
+  #intro-education,
+  #education,
+  #current-location,
+  #love,
+  #awards,
+  #fiction,
+  #academic-essays,
+  #digital-media,
+  #design {
+    background-color: #EFA93F;
+    padding-left: 20%;
+    padding-right: 20%;
+  /*  margin-left: -30%;
+    margin-right: -27%;
+    padding-left: 29%;
+    padding-right: 29%;*/
+  }
+
+
+  header {
+    text-align: center;
+    margin-top: 2em;
+  }
+
+  .h-card {
+    text-align: left;
+    margin-bottom: 2em;
+  }
+
+  #journalism article {
+    column-count: 2;
+    column-width: 280px;
+  }
+
+}
+
+/*  main {
+    margin-left: 15%;
+    margin-right: 15%;
+  } */
+
+
+  /*
+    A quick baseline grid overlay using css+svg.
+    Inspired by [Basehold.it](https://basehold.it/). @author leshido
+    1. Paste this at the *very* bottom of your CSS file.
+    2. Change the `height` value on `<svg height="" ...>` to the value
+       of your `line-height` (in pixels).
+    3. Add `class="g"` to your `<html>` tag to display the grid.
+   */
+
+  .g body { position: relative; }
+
+  .g body::after {
+    background: url('data:image/svg+xml;utf8,<svg height="24" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
+    content: "";
+    display: block;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    position: absolute;
+  }
+
+  .g body:active::after { display: none; }
