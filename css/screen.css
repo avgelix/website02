@@ -132,13 +132,6 @@ figcaption,
   color: rgb(130, 12, 2);
 }
 
-.studies,
-.work-title,
-.poem li,
-.image li {
-  list-style: none;
-} 
-
 /* == Layout Rules == */
 h1,
 ul,
@@ -206,6 +199,37 @@ header > h1 {
   font-size: 1.25em; /* 20px/16 == 1.25*/
   padding-top: 0;
   text-align: center;
+}
+
+#profile-pic {
+  min-width: 180px;
+  border-radius: 9.313em; /*149.012px == 9.313em */
+}
+
+#profile-pic,
+#description {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#education {
+  margin-top: 3.052em;/* 48.828px == 3.052em */
+}
+
+#credits > h1 {
+  color: white;
+  margin-top: 1em;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.953em; /*31.25px == 1.953em */
+  letter-spacing: 0.328em; /*5.243px == 0.328em */
+  font-family: Times, serif;
+  text-shadow: 0.0625em 0.1875em black; /* 1px 3px */
+  padding-bottom: 0;
+}
+
+#credits > section > h3 {
+  padding-bottom: 0;
 }
 
 
