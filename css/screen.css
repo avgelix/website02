@@ -14,6 +14,8 @@ Yellow: #EFA93F
 Pink: #eda895 */
 
 
+
+
 /* == Base Styles == */
 
 * {
@@ -132,6 +134,8 @@ figcaption,
   color: rgb(130, 12, 2);
 }
 
+
+
 /* == Layout Rules == */
 h1,
 ul,
@@ -140,7 +144,8 @@ article {
   padding-bottom: 1.25em; /* 20px/16= 1.25*/
 }
 
-img {
+img,
+.image {
   display: block;
   padding: 0;
   max-width: 70%;
@@ -232,5 +237,79 @@ header > h1 {
   padding-bottom: 0;
 }
 
-
 /* == Module Rules == */
+
+
+@media screen and (min-width: 700px) {
+
+  body {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  header {
+    margin-top: 1.953em; /*31.25px == 1.953em */
+  }
+
+  #work-experience,
+  #poetry,
+  #journalism,
+  #programming,
+  #research,
+  #family,
+  #passions,
+  #do,
+  #future {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: -1.953em; /*31.25px == 1.953em */
+    margin-right: -1.953em; /*31.25px == 1.953em */
+  }
+
+  #writing-title {
+    padding-left: 10%;
+    margin-left: -1.953em; /*31.25px == 1.953em */
+  }
+
+  #birth-place,
+  #intro-education,
+  #education,
+  #current-location,
+  #love,
+  #awards,
+  #digital-media,
+  #design,
+  #fiction,
+  #academic-essays {
+    background-color: #EFA93F;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #profile-pic {
+    border-radius: 14.552em; /*232.831px == 14.552em */
+    max-width: 25em; /*400px/16 == 25em */
+  }
+
+  #credits > h1 {
+    padding-top: 1.953em; /*31.25px == 1.953em */
+    font-size: 3.052em; /*48.828px ==3.052em */
+  }
+
+  #credits > section > h3 {
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  #fiction p,
+  #academic-essays p {
+    text-align: justify;
+  }
+
+  #journalism section {
+    column-count: 2;
+    column-width: 17.5em; /*280px/16== 17.5em */
+  }
+
+}
