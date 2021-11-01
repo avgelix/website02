@@ -98,10 +98,15 @@ a,
   padding-top: 1.25em; /* 20px == 1.25em */
 }
 
-#website-navigation li {
+.website-navigation {
   background-color: white;
+  display: flex;
   padding: 0.64em; /*10.24px == 0.64em */
-  display: inline-flex;
+  justify-content: space-around;
+}
+
+#website-navigation li {
+  list-style: none;
 }
 
 #page-navigation li {
@@ -243,8 +248,6 @@ header > h1 {
 }
 
 /* == Module Rules == */
-
-
 @media screen and (min-width: 700px) {
 
   body {
@@ -342,11 +345,12 @@ header > h1 {
   #programming,
   #research,
   #page-navigation,
-  aside,
   #family,
   #passions,
   #do,
-  #future {
+  #future,
+  aside,
+  #error-content{
     padding-left: 20%;
     padding-right: 20%;
     margin-left: -1.953em; /*31.25px == 1.953em */
@@ -384,3 +388,29 @@ header > h1 {
   }
 
 }
+
+
+/* A quick baseline grid overlay using css+svg.
+ Inspired by [Basehold.it](https://basehold.it/). @author leshido
+ 1. Paste this at the *very* bottom of your CSS file.
+ 2. Change the `height` value on `<svg height="" ...>` to the value
+    of your `line-height` (in pixels).
+ 3. Add `class="g"` to your `<html>` tag to display the grid.
+*/
+
+.g body { position: relative; }
+
+.g body::after {
+ background: url('data:image/svg+xml;utf8,<svg height="25" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
+ content: "";
+ display: block;
+ pointer-events: none;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ z-index: 9999;
+ position: absolute;
+}
+
+.g body:active::after { display: none; }
