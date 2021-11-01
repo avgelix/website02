@@ -39,7 +39,7 @@ h4 {
 h1 {
   font-weight: bold;
   font-size: 1.953em; /* 31.25px == 1.953em */
-  line-height: 1.953em; /* 31.25px == 1.953em */
+  line-height: 1.25em; /* 20px == 1.25em */
 }
 
 h2 {
@@ -196,7 +196,7 @@ header > h1 {
   font-style: italic;
   font-family: "Glacial Indifferent", serif;
   letter-spacing: 0.262em; /*4.194px == 0.262em */
-  font-size: 1.25em; /* 20px/16 == 1.25*/
+  font-size: 1em; /* 16px/16 == 1em*/
   padding-top: 0;
   text-align: center;
 }
@@ -224,7 +224,7 @@ header > h1 {
   font-size: 1.953em; /*31.25px == 1.953em */
   letter-spacing: 0.328em; /*5.243px == 0.328em */
   font-family: Times, serif;
-  text-shadow: 0.0625em 0.1875em black; /* 1px 3px */
+  text-shadow: 1px 3px black; /* 1px 3px */
   padding-bottom: 0;
 }
 
