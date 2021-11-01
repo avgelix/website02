@@ -132,6 +132,12 @@ figcaption,
   color: rgb(130, 12, 2);
 }
 
+.studies,
+.work-title,
+.poem li,
+.image li {
+  list-style: none;
+} 
 
 /* == Layout Rules == */
 h1,
