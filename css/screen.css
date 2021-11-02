@@ -23,10 +23,10 @@ Pink: #eda895 */
 }
 
 html {
-  font-size: 16px; /* 16px == 1em */
+  font-size: 1em; /* 16px == 1em */
   line-height: 1.563em; /* 25px/16 == 1.563em */
   font-family: "Glacial Indifference", "Open Sans", sans-serif;
-  padding: 1.953em; /* 31.25px == 1.953em */
+  padding: 1.953em; /* 31.25px/16 == 1.953em */
   background-color: rgb(130, 12, 2);
   color: rgb(255, 255, 255);
 }
@@ -40,21 +40,21 @@ h4 {
 
 h1 {
   font-weight: bold;
-  font-size: 1.953em; /* 31.25px == 1.953em */
-  line-height: 1.25em; /* 20px == 1.25em */
+  font-size: 1.953em; /* 31.25px/16 == 1.953em */
+  line-height: 0.896em; /* 28px/31.25 == 0.896em */
 }
 
 h2 {
   font-variant: small-caps;
   font-weight: bolder;
-  font-size: 1.563em; /* 25px == 1.563em */
-  padding-top: 1em;
+  font-size: 1.563em; /* 25px/16 == 1.563em */
+  padding-top: 0.64em; /*16px/25 == 0.64em */
 }
 
 h3 {
   font-weight: bold;
-  font-size: 1.25em; /* 20px == 1.25em */
-  padding-bottom: 0.512em; /* 8.192px == 0.512em */
+  font-size: 1.25em; /* 20px/16 == 1.25em */
+  padding-bottom: 0.4096em; /* 8.192px/20px == 0.4096em */
 }
 
 h4 {
@@ -69,7 +69,7 @@ li {
 
 footer,
 .footer {
-  margin: -1.953em; /* 31.25px == 1.953em */
+  margin: -1.953em; /* 31.25px/16 == 1.953em */
   font-style: italic;
   font-size: 0.72em; /* 11.52px/16= 0.72*/
 }
@@ -78,7 +78,7 @@ a,
 .h-card li,
 .date-location-duration li {
   color: #EFA93F;
-  font-size: 0.8em; /* 12.8px == 0.8em*/
+  font-size: 0.8em; /* 12.8px/16 == 0.8em*/
   list-style: none;
 }
 
@@ -95,13 +95,13 @@ a,
 
 .poem-description {
   color: #EFA93F;
-  padding-top: 1.25em; /* 20px == 1.25em */
+  padding-top: 1.25em; /* 20px/16 == 1.25em */
 }
 
 .website-navigation {
   background-color: white;
   display: flex;
-  padding: 0.64em; /*10.24px == 0.64em */
+  padding: 0.64em; /*10.24px/16 == 0.64em */
   justify-content: space-around;
 }
 
@@ -110,14 +110,14 @@ a,
 }
 
 #page-navigation li {
-  font-size: 1em;
+  font-size: 1em; /*16px*/
   list-style: none;
   display: block;
-  margin-bottom: 0.64em; /*10.24px == 0.64em */
+  margin-bottom: 0.64em; /*10.24px/16 == 0.64em */
   background-color: #EFA93F;
   width: 80%;
-  padding-left: 1em;
-  border-radius: 1.953em; /* 31.25px == 1.953em */
+  padding-left: 1em; /* 16px */
+  border-radius: 1.953em; /* 31.25px/16 == 1.953em */
 }
 
 #education h2,
@@ -142,11 +142,14 @@ figcaption,
 
 
 /* == Layout Rules == */
-h1,
 ul,
 p,
 article {
   padding-bottom: 1.25em; /* 20px/16= 1.25*/
+}
+
+h1 {
+  padding-bottom: 0.64em; /* 20px/31.25 == 0.64em*/
 }
 
 img,
@@ -158,29 +161,36 @@ img,
 }
 
 figure {
-  padding-top: 1.953em; /*31.25px == 1.953em */
+  padding-top: 1.953em; /* 31.25px/16 == 1.953em */
 }
 
-#credits > section > figure > img {
-  padding-top: 1em;
+#credits > section > figure > img,
+#credits > section > article > figure > img {
+  padding-top: 1em; /*16px*/
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-rows: auto auto auto;
+
 }
 
 article,
 section {
-  padding-bottom: 1.953em; /* 31.25px == 1.953em */
-  padding-top: 1.953em; /* 31.25px == 1.953em */
+  padding-bottom: 1.953em; /* 31.25px/16 == 1.953em */
+  padding-top: 1.953em; /* 31.25px/16 == 1.953em */
 }
 
 #website-footer {
-  margin-top: 1.953em; /* 31.25px == 1.953em */
+  margin-top: 2.71267361em; /* 31.25px/11.52px == 2.71267361em */
 }
 
 header > h1 {
-  padding-bottom: 0.512em; /* 8.192px == 0.512em */
+  padding-bottom: 0.262144em; /* 8.192px/31.25px == 0.262144em */
 }
 
 #portfolio > body > header {
-  padding-bottom: 1.953em; /* 31.25px == 1.953em */
+  padding-bottom: 1.953em; /* 31.25px/16 == 1.953em */
 }
 
 #website-navigation ul,
@@ -200,9 +210,9 @@ header > h1 {
 #digital-media,
 #design {
   background-color: #EFA93F;
-  margin-left: -1.953em;/* 31.25px == 1.953em */
-  margin-right: -1.953em;  /* 31.25px == 1.953em */
-  padding: 1.953em; /* 31.25px == 1.953em */
+  margin-left: -1.953em;/* 31.25px/16 == 1.953em */
+  margin-right: -1.953em;  /* 31.25px/16 == 1.953em */
+  padding: 1.953em; /* 31.25px/16 == 1.953em */
   padding-bottom: 0;
   margin-top: 0;
 }
@@ -210,15 +220,15 @@ header > h1 {
 #intro > h2 {
   font-style: italic;
   font-family: "Glacial Indifferent", serif;
-  letter-spacing: 0.262em; /*4.194px == 0.262em */
   font-size: 1em; /* 16px/16 == 1em*/
+  letter-spacing: 0.262em; /* 4.194px/16 == 0.262em */
   padding-top: 0;
   text-align: center;
 }
 
 #profile-pic {
-  min-width: 180px;
-  border-radius: 9.313em; /*149.012px == 9.313em */
+  min-width: 11.25em; /* 180/16 == 11.25em*/
+  border-radius: 9.313em; /*149.012px/16 == 9.313em */
 }
 
 #profile-pic,
@@ -228,18 +238,18 @@ header > h1 {
 }
 
 #education {
-  margin-top: 3.052em;/* 48.828px == 3.052em */
+  margin-top: 3.052em;/* 48.828px/16 == 3.052em */
 }
 
 #credits > h1 {
   color: white;
-  margin-top: 1em;
+  font-size: 1.953em; /*31.25px == 1.953em */
+  margin-top: 0.512em; /* 16px/31.25 == 0.512em */
   text-align: center;
   font-weight: bolder;
-  font-size: 1.953em; /*31.25px == 1.953em */
-  letter-spacing: 0.328em; /*5.243px == 0.328em */
+  letter-spacing: 0.167776em; /*5.243px/31.25 == 0.167776em */
   font-family: Times, serif;
-  text-shadow: 1px 3px black; /* 1px 3px */
+  text-shadow: 0.032em 0.096em black; /* 1px/31.25 == 0.032em*/ /* 3px/31.25 == 0.096em */
   padding-bottom: 0;
 }
 
@@ -248,7 +258,7 @@ header > h1 {
 }
 
 /* == Module Rules == */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 43.75em) /* 700px/16 == 43.75em */ {
 
   body {
     display: block;
@@ -257,7 +267,7 @@ header > h1 {
   }
 
   header {
-    margin-top: 1.953em; /*31.25px == 1.953em */
+    margin-top: 1.953em; /*31.25px/16 == 1.953em */
   }
 
   #work-experience,
@@ -271,13 +281,13 @@ header > h1 {
   #future {
     padding-left: 10%;
     padding-right: 10%;
-    margin-left: -1.953em; /*31.25px == 1.953em */
-    margin-right: -1.953em; /*31.25px == 1.953em */
+    margin-left: -1.953em; /*31.25px/16 == 1.953em */
+    margin-right: -1.953em; /*31.25px/16 == 1.953em */
   }
 
   #writing-title {
     padding-left: 10%;
-    margin-left: -1.953em; /*31.25px == 1.953em */
+    margin-left: -1.25em; /*31.25px/25px == 1.25em */
   }
 
   #birth-place,
@@ -296,13 +306,13 @@ header > h1 {
   }
 
   #profile-pic {
-    border-radius: 14.552em; /*232.831px == 14.552em */
+    border-radius: 14.552em; /*232.831px/16 == 14.552em */
     max-width: 25em; /*400px/16 == 25em */
   }
 
   #credits > h1 {
-    padding-top: 1.953em; /*31.25px == 1.953em */
-    font-size: 3.052em; /*48.828px ==3.052em */
+    font-size: 3.052em; /*48.828px/16 ==3.052em */
+    padding-top: 0.64000164em; /*31.25px/48.828px == 0.64000164em*/
   }
 
   #credits > section > h3 {
@@ -323,7 +333,7 @@ header > h1 {
 }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 62.5em) /* 1000px/16 == 62.5em */ {
 
   body {
     display: block;
@@ -332,7 +342,7 @@ header > h1 {
   }
 
   header {
-    margin-top: 1.953em; /*31.25px == 1.953em */
+    margin-top: 1.953em; /*31.25px/16 == 1.953em */
   }
 
   #page-navigation li {
@@ -353,13 +363,10 @@ header > h1 {
   #error-content{
     padding-left: 20%;
     padding-right: 20%;
-    margin-left: -1.953em; /*31.25px == 1.953em */
-    margin-right: -1.953em; /*31.25px == 1.953em */
   }
 
   #writing-title {
     padding-left: 20%;
-    margin-left: -1.953em; /*31.25px == 1.953em */
   }
 
   #birth-place,
@@ -379,12 +386,11 @@ header > h1 {
 
   header {
     text-align: center;
-    margin-top: 1.953em; /*31.25px == 1.953em */
   }
 
   .h-card {
     text-align: left;
-    margin-bottom: 1.953em; /*31.25px == 1.953em */
+    margin-bottom: 1.953em; /*31.25px/16 == 1.953em */
   }
 
 }
