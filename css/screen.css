@@ -40,8 +40,8 @@ h4 {
 
 h1 {
   font-weight: bold;
-  font-size: 1.953em; /* 28px/16 ==  */
-  line-height: 0.896em; /* 26px/28 == */
+  font-size: 1.75em; /* 28px/16 == 1.75em  */
+  line-height: 1em; /* 28px/28 == 1em*/
 }
 
 h2 {
@@ -187,7 +187,7 @@ section {
 }
 
 header > h1 {
-  padding-bottom: 0.262144em; /* 8.192px/31.25px == 0.262144em */
+  padding-bottom: 0.29257143em; /* 8.192px/28px == 0.29257143em */
 }
 
 #portfolio > body > header {
@@ -245,7 +245,7 @@ header > h1 {
 #credits > h1 {
   color: white;
   font-size: 1.953em; /*31.25px == 1.953em */
-  margin-top: 0.512em; /* 16px/31.25 == 0.512em */
+  margin-top: 0.768em; /* 24px/31.25 == 0.768em */
   text-align: center;
   font-weight: bolder;
   letter-spacing: 0.167776em; /*5.243px/31.25 == 0.167776em */
@@ -321,7 +321,7 @@ header > h1 {
 
   #profile-pic {
     border-radius: 14.552em; /*232.831px/16 == 14.552em */
-    max-width: 25em; /*400px/16 == 25em */
+    max-width: 21.875em; /*350px/16 == 21.875em */
   }
 
   #credits > h1 {
