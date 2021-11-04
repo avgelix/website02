@@ -23,7 +23,7 @@ Pink: #eda895 */
 }
 
 html {
-  font-size: 1em; /* 16px == 1em */
+  font-size: 1em; /* 16px/16 == 1em */
   line-height: 1.563em; /* 25px/16 == 1.563em */
   font-family: "Glacial Indifference", "Open Sans", sans-serif;
   padding: 1.953em; /* 31.25px/16 == 1.953em */
@@ -40,8 +40,8 @@ h4 {
 
 h1 {
   font-weight: bold;
-  font-size: 1.953em; /* 31.25px/16 == 1.953em */
-  line-height: 0.896em; /* 28px/31.25 == 0.896em */
+  font-size: 1.953em; /* 28px/16 ==  */
+  line-height: 0.896em; /* 26px/28 == */
 }
 
 h2 {
@@ -99,14 +99,21 @@ a,
 }
 
 .website-navigation {
-  background-color: white;
-  display: flex;
-  padding: 0.64em; /*10.24px/16 == 0.64em */
-  justify-content: space-around;
+  padding-top: 0.64em; /*10.24px/16 == 0.64em */
+  color: black;
 }
 
 #website-navigation li {
+  background-color: white;
   list-style: none;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+
+#website-navigation a {
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  padding: 16px;
 }
 
 #page-navigation li {
@@ -167,12 +174,6 @@ figure {
 #credits > section > figure > img,
 #credits > section > article > figure > img {
   padding-top: 1em; /*16px*/
-}
-
-.image-gallery {
-  display: grid;
-  grid-template-rows: auto auto auto;
-
 }
 
 article,
@@ -257,7 +258,7 @@ header > h1 {
   padding-bottom: 0;
 }
 
-/* == Module Rules == */
+/* == State Rules == */
 @media screen and (min-width: 43.75em) /* 700px/16 == 43.75em */ {
 
   body {
@@ -268,6 +269,19 @@ header > h1 {
 
   header {
     margin-top: 1.953em; /*31.25px/16 == 1.953em */
+  }
+
+  .website-navigation {
+    background-color: white;
+    display: flex;
+    padding: 0.64em; /*10.24px/16 == 0.64em */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: black;
+  }
+
+  #website-navigation li {
+    margin-bottom: 0;
   }
 
   #work-experience,
@@ -328,6 +342,11 @@ header > h1 {
   #journalism section {
     column-count: 2;
     column-width: 17.5em; /*280px/16== 17.5em */
+  }
+
+  .image-gallery {
+    display: grid;
+    grid: repeat(2, 6.25em);
   }
 
 }
