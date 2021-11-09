@@ -134,26 +134,11 @@ a,
 }
 
 
-#education h2,
-#education .date-location-duration li,
-#awards h2,
-#awards a,
-#fiction h4,
-#academic-essays h4,
-#digital-media  h2,
-#digital-media .date-location-duration li,
-#digital-media a,
-#design h2,
-#design .date-location-duration li,
-#website-navigation a,
-#page-navigation a,
-#game-design h4,
-figcaption,
-.fiction-description {
+.red-text,
+.fiction-description,
+#education .date-location-duration li{
   color: rgb(130, 12, 2);
 }
-
-
 
 /* == Layout Rules == */
 ul,
