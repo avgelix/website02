@@ -98,6 +98,9 @@ a,
   padding-top: 1.25em; /* 20px/16 == 1.25em */
 }
 
+
+
+/*Website Navigation Styling*/
 .website-navigation {
   padding-top: 0.64em; /*10.24px/16 == 0.64em */
   color: black;
@@ -115,6 +118,9 @@ a,
   letter-spacing: 0.1em;
   padding: 16px;
 }
+/*Website Navigation Styling*/
+
+
 
 #page-navigation li {
   font-size: 1em; /*16px*/
@@ -126,6 +132,7 @@ a,
   padding-left: 1em; /* 16px */
   border-radius: 1.953em; /* 31.25px/16 == 1.953em */
 }
+
 
 #education h2,
 #education .date-location-duration li,
@@ -155,7 +162,8 @@ article {
   padding-bottom: 1.25em; /* 20px/16= 1.25*/
 }
 
-h1 {
+h1,
+.title  {
   padding-bottom: 0.64em; /* 20px/31.25 == 0.64em*/
 }
 
@@ -181,6 +189,16 @@ section {
   padding-bottom: 1.953em; /* 31.25px/16 == 1.953em */
   padding-top: 1.953em; /* 31.25px/16 == 1.953em */
 }
+
+/*don't add too much space around nested things, please*/
+article > ul,
+section > ul,
+section > ol,
+article > ol {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+/*don't add too much space around nested things, please*/
 
 #website-footer {
   margin-top: 2.71267361em; /* 31.25px/11.52px == 2.71267361em */
@@ -339,7 +357,7 @@ header > h1 {
     text-align: justify;
   }
 
-  #journalism section {
+  #journalism p {
     column-count: 2;
     column-width: 17.5em; /*280px/16== 17.5em */
   }
@@ -398,7 +416,6 @@ header > h1 {
   #academic-essays,
   #digital-media,
   #design {
-    background-color: #EFA93F;
     padding-left: 20%;
     padding-right: 20%;
   }
