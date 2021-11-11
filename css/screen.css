@@ -275,7 +275,7 @@ header > h1 {
 }
 
 /* == State Rules == */
-@media screen and (min-width: 43.75em) /* 700px/16 == 43.75em */ {
+@media screen and (min-width: 900px) /* 700px/16 == 43.75em */ {
 
   body {
     display: block;
