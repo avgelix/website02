@@ -118,9 +118,8 @@ a,
   letter-spacing: 0.1em;
   padding: 16px;
 }
+
 /*Website Navigation Styling*/
-
-
 
 #page-navigation li {
   font-size: 1em; /*16px*/
@@ -133,6 +132,19 @@ a,
   border-radius: 1.953em; /* 31.25px/16 == 1.953em */
 }
 
+/* some interactivity */
+#website-navigation li:active,
+#website-navigation li:hover,
+#website-navigation li:focus {
+  background-color: #eda895;
+}
+
+#page-navigation li:active,
+#page-navigation li:focus,
+#page-navigation li:hover {
+  background-color: white;
+}
+/* some interactivity */
 
 .red-text,
 .fiction-description,
