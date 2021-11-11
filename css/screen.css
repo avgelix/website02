@@ -258,6 +258,7 @@ header > h1 {
 }
 
 #credits > h1 {
+  font-variant: small-caps;
   color: white;
   font-size: 1.953em; /*31.25px == 1.953em */
   margin-top: 0.768em; /* 24px/31.25 == 0.768em */
