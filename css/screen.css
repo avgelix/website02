@@ -165,7 +165,7 @@ img,
 .image {
   display: block;
   padding: 0;
-  max-width: 70%;
+  max-width: 100%;
   min-width: 11.25em; /*180px/16 == 11.25m*/
 }
 
@@ -251,7 +251,7 @@ article > ol {
 }
 
 #credits > h1 {
-  font-variant: small-caps;
+  text-transform: uppercase;
   color: white;
   font-size: 1.953em; /*31.25px == 1.953em */
   margin-top: 0.768em; /* 24px/31.25 == 0.768em */
@@ -267,7 +267,23 @@ article > ol {
   padding-bottom: 0;
 }
 
+.image-gallery li {
+  list-style: none;
+}
+
 /* == State Rules == */
+
+@media screen and (min-width: 440px) {
+  .image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.563em; /* 25px/16 == 1.563em */
+    grid-gap: 1.563em; /* 25px/16 == 1.563em */
+    align-content: center;
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 700px) /* 700px/16 == 43.75em */ {
 
   body {
