@@ -114,6 +114,11 @@ a,
 }
 /*Website Navigation Styling*/
 
+
+#page-navigation {
+  padding-bottom: 3.125em; /*50px/16 = 3.125em*/
+}
+
 #page-navigation li {
   font-size: 1em; /*16px*/
   list-style: none;
@@ -123,10 +128,6 @@ a,
   width: 80%;
   padding-left: 1em; /* 16px */
   border-radius: 1.953em; /* 31.25px/16 == 1.953em */
-}
-
-#page-navigation a {
-  padding-right: 60%;
 }
 
 /* some interactivity */
@@ -143,9 +144,10 @@ a,
 }
 /* some interactivity */
 
-.red-text,
-.fiction-description,
-#education .date-location-duration li{
+.odd-text,
+.odd-text li,
+.nav-text,
+.fiction-description {
   color: rgb(130, 12, 2);
 }
 
@@ -208,16 +210,7 @@ article > ol {
   margin-left: 0;
 }
 
-#birth-place,
-#education,
-#intro-education,
-#current-location,
-#love,
-#awards,
-#fiction,
-#academic-essays,
-#digital-media,
-#design {
+.odd {
   background-color: #EFA93F;
   margin-left: -1.953em;/* 31.25px/16 == 1.953em */
   margin-right: -1.953em;  /* 31.25px/16 == 1.953em */
@@ -228,7 +221,7 @@ article > ol {
 
 #intro > h2 {
   font-style: italic;
-  font-family: "Glacial Indifferent", serif;
+  font-family: "Glacial Indifferent", "Franklin Gothic", "Open Sans" serif;
   font-size: 1em; /* 16px/16 == 1em*/
   letter-spacing: 0.262em; /* 4.194px/16 == 0.262em */
   padding-top: 0;
@@ -264,7 +257,7 @@ article > ol {
 }
 
 #credits > section > h3 {
-  padding-bottom: 0;
+  padding-bottom: 0.78125em; /*12,5px/16 = 0,78125em*/
 }
 
 .image-gallery li {
@@ -309,15 +302,13 @@ article > ol {
     margin-bottom: 0;
   }
 
-  #work-experience,
-  #poetry,
-  #journalism,
-  #programming,
-  #research,
-  #family,
-  #passions,
-  #do,
-  #future {
+  .maincontainer .odd {
+    background-color: #EFA93F;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .main-container {
     padding-left: 10%;
     padding-right: 10%;
     margin-left: -1.953em; /*31.25px/16 == 1.953em */
@@ -327,21 +318,6 @@ article > ol {
   #writing-title {
     padding-left: 10%;
     margin-left: -1.25em; /*31.25px/25px == 1.25em */
-  }
-
-  #birth-place,
-  #intro-education,
-  #education,
-  #current-location,
-  #love,
-  #awards,
-  #digital-media,
-  #design,
-  #fiction,
-  #academic-essays {
-    background-color: #EFA93F;
-    padding-left: 10%;
-    padding-right: 10%;
   }
 
   #profile-pic {
@@ -371,16 +347,8 @@ article > ol {
     margin-left: 0;
   }
 
-  #work-experience,
-  #poetry,
-  #journalism,
-  #programming,
-  #research,
+  .main-container,
   #page-navigation,
-  #family,
-  #passions,
-  #do,
-  #future,
   aside,
   #error-content{
     padding-left: 20%;
@@ -389,20 +357,6 @@ article > ol {
 
   #writing-title {
     padding-left: 20%;
-  }
-
-  #birth-place,
-  #intro-education,
-  #education,
-  #current-location,
-  #love,
-  #awards,
-  #fiction,
-  #academic-essays,
-  #digital-media,
-  #design {
-    padding-left: 20%;
-    padding-right: 20%;
   }
 
   header {
