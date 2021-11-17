@@ -130,7 +130,7 @@ a,
   border-radius: 1.953em; /* 31.25px/16 == 1.953em */
 }
 
-/* some interactivity */
+/* some interactivity (?) */
 #website-navigation li:active,
 #website-navigation li:hover,
 #website-navigation li:focus {
@@ -142,7 +142,7 @@ a,
 #page-navigation li:hover {
   background-color: white;
 }
-/* some interactivity */
+/* some interactivity (?) */
 
 .odd-text,
 .odd-text li,
@@ -150,6 +150,7 @@ a,
 .fiction-description {
   color: rgb(130, 12, 2);
 }
+
 
 /* == Layout Rules == */
 ul,
@@ -172,21 +173,16 @@ img,
 }
 
 figure {
-  padding-top: 1.953em; /* 31.25px/16 == 1.953em */
-}
-
-#credits > section > figure > img,
-#credits > section > article > figure > img {
-  padding-top: 1em; /*16px*/
+  padding-top: 1.563em; /* 25px/16 == 1.563em */
 }
 
 article,
 section {
-  padding-bottom: 1.953em; /* 31.25px/16 == 1.953em */
-  padding-top: 1.953em; /* 31.25px/16 == 1.953em */
+  padding-bottom: 1.563em; /* 25px/16 == 1.563em */
+  padding-top: 1.563em; /* 25px/16 == 1.563em */
 }
 
-/*don't add too much space around nested things, please*/
+/*don't add too much space around nested things*/
 article > ul,
 section > ul,
 section > ol,
@@ -194,7 +190,15 @@ article > ol {
   padding-bottom: 0;
   padding-top: 0;
 }
-/*don't add too much space around nested things, please*/
+/*don't add too much space around nested things*/
+
+li > a {
+  font-size: 1em; /*16px/16 =1em*/
+}
+
+#credits img {
+  padding-top: 1em; /*16px/16 =1em*/
+}
 
 #website-footer {
   margin-top: 2.71267361em; /* 31.25px/11.52px == 2.71267361em */
@@ -230,7 +234,6 @@ article > ol {
 
 #profile-pic {
   min-width: 6.25em; /* 100/16 == 6.25em*/
-  max-width: 18.75em; /*300px/16 = 18.75em*/
   border-radius: 10em; /*160px/16 == 10em */
 }
 
@@ -244,7 +247,7 @@ article > ol {
   margin-top: 3.052em;/* 48.828px/16 == 3.052em */
 }
 
-#credits > h1 {
+#credits h1 {
   text-transform: uppercase;
   color: white;
   font-size: 1.953em; /*31.25px == 1.953em */
@@ -254,11 +257,10 @@ article > ol {
   letter-spacing: 0.167776em; /*5.243px/31.25 == 0.167776em */
   font-family: Times, serif;
   text-shadow: 0.032em 0.096em black; /* 1px/31.25 == 0.032em*/ /* 3px/31.25 == 0.096em */
-  padding-bottom: 0;
 }
 
-#credits > section > h3 {
-  padding-bottom: 0.78125em; /*12,5px/16 = 0,78125em*/
+#credits h3 {
+  font-family: serif;
 }
 
 /* == State Rules == */
