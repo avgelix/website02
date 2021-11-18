@@ -235,7 +235,6 @@ article > ol {
   margin-left: -1.953em;/* 31.25px/16 == 1.953em */
   margin-right: -1.953em;  /* 31.25px/16 == 1.953em */
   padding: 1.953em; /* 31.25px/16 == 1.953em */
-  padding-bottom: 0;
   margin-top: 0;
 }
 
@@ -383,8 +382,6 @@ article > ol {
   }
 
   .main-container,
-  #page-navigation,
-  aside,
   #error-content {
     padding-left: 20%;
     padding-right: 20%;
@@ -398,29 +395,41 @@ article > ol {
     text-align: center;
   }
 
-  .h-card {
+  .h-card,
+  #page-navigation {
     text-align: left;
     margin-bottom: 1.953em; /*31.25px/16 == 1.953em */
   }
 
-  #page-navigation, aside {
-    margin-left: -1.953em; /*31.25px/16 == 1.953em */
-    margin-right: -1.953em; /*31.25px/16 == 1.953em */
-}
+  #page-navigation {
+    padding-top: 50px;
+  }
+    aside {
+    padding-top: 25px;
+    text-align: left;
+    width: 60%;
+  }
 
 }
 
 @media screen and (min-width: 1070px) /* 1050px/16 == 52.8125em */ {
   .main-container,
-  #page-navigation,
-  aside,
   #error-content {
-    padding-left: 30%;
-    padding-right: 30%;
+    padding-left: 25%;
+    padding-right: 25%;
   }
 
   #writing-title {
-    padding-left: 30%;
+    padding-left: 25%;
+  }
+
+  .page-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12.5px;
+    grid-gap: 12.5px;
+    align-content: center;
+    justify-content: space-between;
   }
 
   }
