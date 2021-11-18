@@ -226,7 +226,7 @@ article > ol {
 
 #intro > h2 {
   font-style: italic;
-  font-family: "Glacial Indifferent", "Franklin Gothic", "Open Sans", serif;
+  font-family: "Glacial Indifferent", serif;
   font-size: 1em; /* 16px/16 == 1em*/
   letter-spacing: 0.262em; /* 4.194px/16 == 0.262em */
   padding-top: 0;
