@@ -101,14 +101,8 @@ li > a {
 }
 
 .description {
-  margin-top: 0.78125em; /*12.5px/16 == 0.78125em*/
-  padding: 0.78125em; /*12.5px/16 == 0.78125em*/
-  border-radius: 35px;
-  background-color: white;
-}
-
-#poetry .description {
-  color: #EFA93F;
+  padding-top: 1.5625em; /* 25/16 == 1.5625em*/
+  font-weight: bold;
 }
 
 .odd-text,
@@ -132,8 +126,9 @@ li > a {
 
 #website-navigation a {
   text-decoration: none;
-  letter-spacing: 0.1em;
+  letter-spacing:  0.14285714em; /*2px/14 == 0.14285714em*/
   padding-right: 80%;
+  font-size: 0.875em; /*14px/16 == 0.875em*/
 }
 /*Website Navigation Styling*/
 
@@ -153,7 +148,7 @@ li > a {
   text-align: center;
   display: block;
   background-color: #EFA93F;
-  padding-top: 0.78125em; /*12.5px/16 == 0.78125em*/
+  padding-top: 1.5625em; /* 25/16 == 1.5625em*/
   padding-bottom: 1.5625em; /* 25/16 == 1.5625em*/
   margin-bottom: 0;
 }
@@ -208,10 +203,10 @@ section {
 }
 
 /*don't add too much space around nested things*/
-article > ul,
-section > ul,
-section > ol,
-article > ol {
+article ul,
+section ul,
+section ol,
+article ol {
   padding-bottom: 0;
   padding-top: 0;
 }
@@ -348,17 +343,12 @@ article > ol {
     margin-right: -1.953em; /*31.25px/16 == 1.953em */
   }
 
-  #writing-title {
-    padding-left: 10%;
-    margin-left: -1.25em; /*31.25px/25px == 1.25em */
-  }
-
   #profile-pic {
     border-radius: 14.552em; /*232.831px/16 == 14.552em */
     max-width: 21.875em; /*350px/16 == 21.875em */
   }
 
-  #credits > h1 {
+  #credits h1 {
     font-size: 3.052em; /*48.828px/16 ==3.052em */
     padding-top: 0.64000164em; /*31.25px/48.828px == 0.64000164em*/
   }
