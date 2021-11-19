@@ -153,7 +153,7 @@ li > a {
   margin-bottom: 0;
 }
 
-/* some interactivity (?) */
+/* some interactivity */
 #website-navigation li:active,
 #website-navigation li:hover,
 #website-navigation li:focus {
@@ -165,7 +165,7 @@ li > a {
 #page-navigation a:hover {
   background-color: white;
 }
-/* some interactivity (?) */
+/* some interactivity */
 
 
 /* == Layout Rules == */
