@@ -169,6 +169,7 @@ li > a {
 
 
 /* == Layout Rules == */
+
 ul,
 p,
 article {
@@ -203,10 +204,10 @@ section {
 }
 
 /*don't add too much space around nested things*/
-article ul,
-section ul,
-section ol,
-article ol {
+article > ul,
+section > ul,
+section > ol,
+article > ol {
   padding-bottom: 0;
   padding-top: 0;
 }
