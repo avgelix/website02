@@ -103,7 +103,8 @@ li > a {
 .description {
   margin-top: 12.5px;
   padding: 12.5px;
-  border-radius: 25px;
+  border-radius: 35px;
+  background-color: white;
 }
 
 #poetry .description {
@@ -114,10 +115,6 @@ li > a {
 .odd-text li,
 .nav-text {
   color: rgb(130, 12, 2);
-}
-
-.description {
-  background-color: white;
 }
 
 /*Website Navigation Styling*/
@@ -139,7 +136,6 @@ li > a {
   padding-right: 80%;
 }
 /*Website Navigation Styling*/
-
 
 #page-navigation {
   padding-bottom: 3.125em; /*50px/16 = 3.125em*/
@@ -294,10 +290,9 @@ article > ol {
     display: none;
   }
 
-  }
 /* == State Rules == */
-
 @media screen and (min-width: 27.5em) /*440px/16 == 27.5em*/ {
+
   .image-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -327,6 +322,12 @@ article > ol {
     justify-content: space-around;
     flex-wrap: wrap;
     color: black;
+  }
+
+  #website-navigation a {
+    margin-bottom: 0;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   #website-navigation li {
@@ -376,6 +377,7 @@ article > ol {
   #page-navigation a {
     width: 100%;
   }
+
   .page-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -388,6 +390,13 @@ article > ol {
 }
 
 @media screen and (min-width: 52.8125em) /* 845px/16 == 52.8125em */ {
+
+  #website-navigation a {
+    margin-bottom: 0;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+
   #page-navigation li {
     margin-left: 0;
   }
@@ -415,7 +424,7 @@ article > ol {
   #page-navigation {
     padding-top: 50px;
   }
-  
+
     #about-me {
     padding-top: 25px;
     text-align: left;
@@ -435,15 +444,6 @@ article > ol {
     padding-left: 25%;
   }
 
-  .page-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 12.5px;
-    grid-gap: 12.5px;
-    align-content: center;
-    justify-content: space-between;
-  }
-
   #logo {
     display: block;
     position: absolute;
@@ -452,4 +452,10 @@ article > ol {
     width: 30px;
   }
 
+  #website-navigation a {
+    margin-bottom: 0;
+    padding-left: 125px;
+    padding-right: 125px;
   }
+
+}
