@@ -285,6 +285,9 @@ article > ol {
   display: none;
 }
 
+#git-repo {
+  font-style: normal; 
+}
 /* == State Rules == */
 @media screen and (min-width: 27.5em) /*440px/16 == 27.5em*/ {
 
@@ -364,18 +367,18 @@ article > ol {
     column-width: 17.5em; /*280px/16== 17.5em */
   }
 
-  #page-navigation a {
-    width: 100%;
+  .page-nav li {
+    width: 35%;
   }
 
   .page-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.78125em; /*12.5px/16 == 0.78125em*/
-    grid-gap: 0.78125em; /*12.5px/16 == 0.78125em*/
-    align-content: center;
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 24px;
+    flex-flow: row wrap;
+    flex-grow: 1;
   }
+
 
 }
 
@@ -397,10 +400,6 @@ article > ol {
     padding-right: 20%;
   }
 
-  #writing-title {
-    padding-left: 20%;
-  }
-
   header {
     text-align: center;
   }
@@ -419,6 +418,10 @@ article > ol {
     padding-top: 1.563em; /* 25px/16 == 1.563em */
     text-align: left;
     width: 60%;
+  }
+
+  .page-nav li {
+    width: 28%;
   }
 
 }
@@ -446,6 +449,10 @@ article > ol {
     margin-bottom: 0;
     padding-left: 7.8125em; /*125px/16 == 7.8125em*/
     padding-right: 7.8125em; /*125px/16 == 7.8125em*/
+  }
+
+  .page-nav li {
+    width: 22%;
   }
 
 }
