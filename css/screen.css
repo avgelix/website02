@@ -126,7 +126,7 @@ li > a {
 
 #website-navigation a {
   text-decoration: none;
-  letter-spacing:  0.14285714em; /*2px/14 == 0.14285714em*/
+  letter-spacing: 0.14285714em; /*2px/14 == 0.14285714em*/
   padding-right: 80%;
   font-size: 0.875em; /*14px/16 == 0.875em*/
 }
@@ -286,8 +286,9 @@ article > ol {
 }
 
 #git-repo {
-  font-style: normal; 
+  font-style: normal;
 }
+
 /* == State Rules == */
 @media screen and (min-width: 27.5em) /*440px/16 == 27.5em*/ {
 
@@ -311,6 +312,10 @@ article > ol {
 
   header {
     margin-top: 1.953em; /*31.25px/16 == 1.953em */
+  }
+
+  .page-nav li {
+    width: 35%;
   }
 
   .website-navigation {
@@ -367,14 +372,10 @@ article > ol {
     column-width: 17.5em; /*280px/16== 17.5em */
   }
 
-  .page-nav li {
-    width: 35%;
-  }
-
   .page-nav {
     display: flex;
     justify-content: flex-start;
-    column-gap: 24px;
+    column-gap: 1.563em; /* 25px/16 == 1.563em */
     flex-flow: row wrap;
     flex-grow: 1;
   }
@@ -388,6 +389,10 @@ article > ol {
     margin-bottom: 0;
     padding-left: 5.3125em;/* 85px/16 == 5.3125em*/
     padding-right: 5.3125em;/* 85px/16 == 5.3125em*/
+  }
+
+  .page-nav li {
+    width: 28%;
   }
 
   #page-navigation li {
@@ -418,10 +423,6 @@ article > ol {
     padding-top: 1.563em; /* 25px/16 == 1.563em */
     text-align: left;
     width: 60%;
-  }
-
-  .page-nav li {
-    width: 28%;
   }
 
 }
