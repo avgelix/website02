@@ -378,7 +378,6 @@ article > ol {
     flex-grow: 1;
   }
 
-
 }
 
 @media screen and (min-width: 52.8125em) /* 845px/16 == 52.8125em */ {
@@ -423,6 +422,29 @@ article > ol {
     width: 60%;
   }
 
+    #profile-pic {
+      float: left;
+      margin-left: 30px;
+      max-width: 300px;
+    }
+
+    #intro figure {
+      padding-bottom: 300px;
+    }
+
+    #intro-description {
+      font-style: normal;
+      font-variant: normal;
+      font-family: "Virtual", serif;
+      margin-top: -80px;
+      font-size: 40px; /* 16px/16 == 1em*/
+      line-height: 40px;
+      letter-spacing: 2px; /* 4.194px/16 == 0.262em */
+    }
+
+    #credits {
+    padding-top: 300px;
+    }
 
 }
 
@@ -468,8 +490,8 @@ article > ol {
     font-style: normal;
     font-variant: normal;
     font-family: "Virtual", serif;
-    margin-top: -50px;
-    font-size: 65px; /* 16px/16 == 1em*/
+    margin-top: -100px;
+    font-size: 60px; /* 16px/16 == 1em*/
     line-height: 70px;
     letter-spacing: 2px; /* 4.194px/16 == 0.262em */
   }
@@ -477,5 +499,5 @@ article > ol {
   #credits {
   padding-top: 300px;
   }
-  
+
 }
