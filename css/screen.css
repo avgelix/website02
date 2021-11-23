@@ -234,7 +234,7 @@ article > ol {
   margin-top: 0;
 }
 
-#intro > h2 {
+#intro-description {
   font-style: italic;
   font-family: "Glacial Indifferent", serif;
   font-size: 1em; /* 16px/16 == 1em*/
@@ -250,7 +250,7 @@ article > ol {
 }
 
 #profile-pic,
-#description {
+#intro-description {
   margin-left: auto;
   margin-right: auto;
 }
@@ -423,6 +423,7 @@ article > ol {
     width: 60%;
   }
 
+
 }
 
 @media screen and (min-width: 66.875em) /* 1070px/16 == 66.875em */ {
@@ -454,4 +455,27 @@ article > ol {
     width: 22%;
   }
 
+  #profile-pic {
+    float: left;
+    margin-left: 100px;
+  }
+
+  #intro figure {
+    padding-bottom: 300px;
+  }
+
+  #intro-description {
+    font-style: normal;
+    font-variant: normal;
+    font-family: "Virtual", serif;
+    margin-top: -50px;
+    font-size: 65px; /* 16px/16 == 1em*/
+    line-height: 70px;
+    letter-spacing: 2px; /* 4.194px/16 == 0.262em */
+  }
+
+  #credits {
+  padding-top: 300px;
+  }
+  
 }
