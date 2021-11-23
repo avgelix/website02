@@ -70,16 +70,11 @@ li {
 }
 
 footer {
-  padding-top: 12.5em;/*200/16px == 12.5em*/
+  padding-top: 48px;
   text-align: center;
   margin: -1.953em; /* 31.25px/16 == 1.953em */
-  font-size: 1em; /*16/16 = 1em*/
+  font-size: 14px;
 }
-
-#git-repo {
-  font-size: 20px;
-}
-
 
 a,
 .h-card li,
@@ -268,21 +263,23 @@ article > ol {
   padding-bottom: 3.125em;/*50px/16 ==  3.125em*/
 }
 
-#credits h1 {
-  text-transform: uppercase;
-  color: white;
+#credits {
+  padding-top: 200px;
+}
+
+#credits h3 {
+  padding-bottom: 0;
+  text-transform: capitalize;
+  color: #EFA93F;
   font-size: 1.953em; /*31.25px == 1.953em */
   margin-top: 0.768em; /* 24px/31.25 == 0.768em */
-  text-align: center;
   font-weight: bolder;
-  letter-spacing: 0.167776em; /*5.243px/31.25 == 0.167776em */
   font-family: Times, serif;
   text-shadow: 0.032em 0.096em black; /* 1px/31.25 == 0.032em*/ /* 3px/31.25 == 0.096em */
 }
 
-#credits h3 {
-  font-family: serif;
-  padding-bottom: 0;
+#credits article {
+  padding-bottom: 125px;
 }
 
 #logo {
