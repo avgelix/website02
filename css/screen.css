@@ -70,12 +70,16 @@ li {
 }
 
 footer {
-  padding-top: 17.3611111em;/*200/12.52px == 17.3611111em*/
+  padding-top: 12.5em;/*200/16px == 12.5em*/
   text-align: center;
   margin: -1.953em; /* 31.25px/16 == 1.953em */
-  font-style: italic;
-  font-size: 0.72em; /* 11.52px/16= 0.72*/
+  font-size: 1em; /*16/16 = 1em*/
 }
+
+#git-repo {
+  font-size: 20px;
+}
+
 
 a,
 .h-card li,
@@ -285,10 +289,6 @@ article > ol {
   display: none;
 }
 
-#git-repo {
-  font-style: normal;
-}
-
 /* == State Rules == */
 @media screen and (min-width: 27.5em) /*440px/16 == 27.5em*/ {
 
@@ -300,6 +300,7 @@ article > ol {
     align-content: center;
     justify-content: space-between;
   }
+
 }
 
 @media screen and (min-width: 37.5em) /* 600px/16 == 37.5em */ {
