@@ -195,6 +195,11 @@ img,
   min-width: 11.25em; /*180px/16 == 11.25m*/
 }
 
+img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 figure {
   padding-top: 1.563em; /* 25px/16 == 1.563em */
 }
@@ -471,7 +476,8 @@ article > ol {
     position: absolute;
     margin-top: -11em;
     padding-left: 80%;
-    width: 1.875em; /*30px/16 ==  1.875em*/
+    width: 100%;
+    box-shadow: none;
   }
 
   #website-navigation a {
