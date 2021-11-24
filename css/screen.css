@@ -141,15 +141,22 @@ li > a {
 }
 
 #page-navigation a {
-  font-size: 1em; /*16px*/
+  font-size: 1em; /*16/16px = 1em*/
   text-decoration: none;
   font-stretch: expanded;
   text-align: center;
   display: block;
   background-color: #EFA93F;
+  border-top-left-radius: 1em; /*16/16px = 1em*/
+  border-top-right-radius: 1em; /*16/16px = 1em*/
   padding-top: 1.5625em; /* 25/16 == 1.5625em*/
   padding-bottom: 1.5625em; /* 25/16 == 1.5625em*/
   margin-bottom: 0;
+}
+
+#page-navigation figcaption {
+  font-size: 0.875em; /* 14/16 == 0.875em */
+  letter-spacing: 0.10714286em; /* 1.5px/14 == 0.10714286em */
 }
 
 /* some interactivity */
