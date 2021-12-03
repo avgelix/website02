@@ -447,7 +447,7 @@ article > ol {
   #intro-description {
     font-style: normal;
     font-variant: normal;
-    font-family: "Virtual", "Brush Script MT" serif;
+    font-family: "Virtual", "Brush Script MT", serif;
     margin-top: -80px;
     font-size: 40px; /* 16px/16 == 1em*/
     line-height: 40px;
