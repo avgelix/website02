@@ -447,11 +447,15 @@ article > ol {
   #intro-description {
     font-style: normal;
     font-variant: normal;
-    font-family: "Virtual", "Brush Script MT", serif;
+    /*font-family: "Virtual", "Brush Script MT", serif;*/
+    font-family: "Brush Script MT";
+    font-stretch: ultra-condensed;
+    font-weight: lighter;
+    transform: scale(0.9, 1.7);
     margin-top: -80px;
-    font-size: 40px; /* 16px/16 == 1em*/
-    line-height: 40px;
-    letter-spacing: 2px; /* 4.194px/16 == 0.262em */
+    font-size: 30px; /* 16px/16 == 1em*/
+    line-height: 24px;
+    letter-spacing: 2.5px; /* 4.194px/16 == 0.262em */
   }
 
   #credits {
@@ -501,11 +505,16 @@ article > ol {
   #intro-description {
     font-style: normal;
     font-variant: normal;
-    font-family: "Virtual", "Brush Script MT", serif;
+    /*font-family: "Virtual", "Brush Script MT", serif;*/
+    font-family: "Brush Script MT";
     margin-top: -100px;
-    font-size: 60px; /* 16px/16 == 1em*/
-    line-height: 70px;
-    letter-spacing: 2.2px; /* 4.194px/16 == 0.262em */
+    font-stretch: ultra-condensed;
+    font-weight: lighter;
+    transform: scale(1, 1.8);
+    font-size: 40px; /* 16px/16 == 1em*/
+    line-height: 40px;
+    letter-spacing: 2.7px; /* 4.194px/16 == 0.262em */
+
   }
 
   #credits {
