@@ -511,7 +511,7 @@ article > ol {
     font-stretch: ultra-condensed;
     font-weight: lighter;
     transform: scale(1, 1.8);
-    font-size: 40px; /* 16px/16 == 1em*/
+    font-size: 36px; /* 16px/16 == 1em*/
     line-height: 40px;
     letter-spacing: 2.7px; /* 4.194px/16 == 0.262em */
 
