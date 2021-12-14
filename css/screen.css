@@ -14,6 +14,7 @@ Pink: #eda895 */
 
 
 /* == Base Styles == */
+
 * {
   box-sizing: border-box;
 }
@@ -198,7 +199,6 @@ img,
 img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 figure {
   padding-top: 1.563em; /* 25px/16 == 1.563em */
@@ -450,17 +450,16 @@ article > ol {
   }
 
   #intro-description {
-    font-style: normal;
     font-variant: normal;
-    /*font-family: "Virtual", "Brush Script MT", serif;*/
-    font-family: "Brush Script MT";
-    font-stretch: ultra-condensed;
+    font-style: normal;
     font-weight: lighter;
-    transform: scale(0.9, 1.7);
+    /*font-family: "Virtual", "Brush Script MT", serif;*/
+    font-family: 'Italianno', cursive;
     margin-top: -80px;
-    font-size: 30px; /* 16px/16 == 1em*/
+    font-size: 36px; /* 16px/16 == 1em */
     line-height: 24px;
-    letter-spacing: 2.5px; /* 4.194px/16 == 0.262em */
+    transform: scaleY(1.2);
+    letter-spacing: 1.5px; /* 4.194px/16 == 0.262em*/
   }
 
   #credits {
@@ -508,18 +507,17 @@ article > ol {
   }
 
   #intro-description {
-    font-style: normal;
-    font-variant: normal;
-    /*font-family: "Virtual", "Brush Script MT", serif;*/
-    font-family: "Brush Script MT";
     margin-top: -100px;
-    font-stretch: ultra-condensed;
+    font-variant: normal;
+    font-style: normal;
     font-weight: lighter;
-    transform: scale(1, 1.8);
-    font-size: 36px; /* 16px/16 == 1em*/
+    /*font-family: "Virtual", "Brush Script MT", serif;*/
+    font-family: 'Italianno', cursive;
+    font-size: 48px; /* 16px/16 == 1em */
+    font-stretch: expanded;
+    transform: scaleY(1.2);
     line-height: 40px;
-    letter-spacing: 2.7px; /* 4.194px/16 == 0.262em */
-
+    letter-spacing: 1.5px; /* 4.194px/16 == 0.262em*/
   }
 
   #credits {
