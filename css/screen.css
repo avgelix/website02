@@ -56,7 +56,7 @@ h3 {
 
 h4 {
   font-weight: bolder;
-  padding-bottom: 0.328em; /* 5.243px == 0.328em */
+  padding-bottom: 0.4096em; /* 8.192px/20px == 0.4096em */
 }
 
 h5 {
@@ -75,6 +75,11 @@ footer {
   text-align: center;
   margin: -1.953em; /* 31.25px/16 == 1.953em */
   font-size: 14px;
+  margin-top: 10px;
+}
+
+main  {
+  padding-top: 1.953em; /* 31.25px/16 == 1.953em */
 }
 
 a,
@@ -228,10 +233,6 @@ article > ol {
   margin-top: 1em; /*16px/16 =1em*/
 }
 
-#portfolio > body > header {
-  padding-bottom: 1.953em; /* 31.25px/16 == 1.953em */
-}
-
 #website-navigation ul,
 #page-navigation ul,
 #contact-info {
@@ -382,7 +383,7 @@ article > ol {
     text-align: justify;
   }
 
-  #journalism section {
+  .newspaper-article {
     column-count: 2;
     column-width: 17.5em; /*280px/16== 17.5em */
   }
@@ -393,6 +394,7 @@ article > ol {
     column-gap: 1.563em; /* 25px/16 == 1.563em */
     flex-flow: row wrap;
     flex-grow: 1;
+    padding-top: 3.125em; /*50px/16 = 3.125em*/
   }
 
 }
