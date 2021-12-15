@@ -480,12 +480,12 @@ article > ol {
     display: block;
     position: absolute;
     margin-top: -14em;
-    margin-left: 85px;
-    padding: 0;
+    padding-left: 70px;
     box-shadow: none;
-    padding-left: 70%;
-    width: 90%;
+    margin-left: 66%;
+    width: 27%;
   }
+
 
   #website-navigation a {
     margin-bottom: 0;
