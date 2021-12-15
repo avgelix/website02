@@ -247,6 +247,12 @@ article > ol {
   margin-top: 0;
 }
 
+.footer.odd {
+  margin-left: -31px;
+  margin-right: -31px;
+  margin-bottom: -31px;
+}
+
 #intro-description {
   font-style: italic;
   font-family: "Glacial Indifferent", serif;
