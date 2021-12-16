@@ -146,11 +146,12 @@ li > a {
   padding-bottom: 4.6875em;/*75px/16 == 4.6875em*/
 }
 
-#page-navigation a {
+#page-navigation .nav-button {
   font-size: 1em; /*16/16px = 1em*/
   text-decoration: none;
   font-stretch: expanded;
   text-align: center;
+  color: rgb(130, 12, 2);
   display: block;
   background-color: #EFA93F;
   border-top-left-radius: 1em; /*16/16px = 1em*/
