@@ -72,14 +72,14 @@ li {
 }
 
 footer {
-  padding-top: 48px;
+  padding-top: 3.4285714286em; /*48px/14 == 3.4285714286em*/
   text-align: center;
-  margin: -1.953em; /* 31.25px/16 == 1.953em */
-  font-size: 14px;
-  margin-top: 10px;
+  margin: -2.2321428571em; /* 31.25px/14 == 2.2321428571em */
+  font-size: 0.875em; /*14px/16 == 0.875em*/
+  margin-top: 0.7142857143em; /* 10/14 == 0.7142857143em*/
 }
 
-main  {
+main {
   padding-top: 1.953em; /* 31.25px/16 == 1.953em */
 }
 
@@ -204,7 +204,7 @@ img,
 }
 
 img {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.25em/*(4px/16 == 0.25em)*/ 0.5em/*(8px/16 ==0.5em)*/ 0 rgba(0, 0, 0, 0.2), 0 0.375em/*(6px/16 ==0.375)*/ 1.25em/*(20px/16 == 1.25em)*/ 0 rgba(0, 0, 0, 0.19);
 }
 
 figure {
@@ -250,9 +250,9 @@ article > ol {
 }
 
 .footer.odd {
-  margin-left: -31px;
-  margin-right: -31px;
-  margin-bottom: -31px;
+  margin-left: -2.2142857143em; /* 31px/14 == 2.2142857143em */
+  margin-right: -2.2142857143em; /* 31px/14 == 2.2142857143em */
+  margin-bottom: -2.2142857143em; /* 31px/14 == 2.2142857143em */
 }
 
 #intro-description {
@@ -262,6 +262,8 @@ article > ol {
   letter-spacing: 0.262em; /* 4.194px/16 == 0.262em */
   padding-top: 0;
   text-align: center;
+  max-width: 18.75em; /* 300px/16 == 18.75em*/
+  margin-top: 1.5em; /*24px/16 == 1..5em;*/
 }
 
 #profile-pic {
@@ -285,7 +287,7 @@ article > ol {
 }
 
 #credits {
-  padding-top: 100px;
+  padding-top: 6.25em; /*100px/16 == 6.25em*/
 }
 
 #credits h3 {
@@ -300,7 +302,7 @@ article > ol {
 }
 
 #credits article {
-  padding-bottom: 125px;
+  padding-bottom: 3.125em; /* 50px/16 == 3.125em*/
 }
 
 #logo {
@@ -409,6 +411,10 @@ article > ol {
 
 @media screen and (min-width: 52.8125em) /* 845px/16 == 52.8125em */ {
 
+  header {
+    text-align: center;
+  }
+
   #website-navigation a {
     margin-bottom: 0;
     padding-left: 5.3125em;/* 85px/16 == 5.3125em*/
@@ -429,10 +435,6 @@ article > ol {
     padding-right: 20%;
   }
 
-  header {
-    text-align: center;
-  }
-
   .h-card,
   #page-navigation {
     text-align: left;
@@ -451,29 +453,34 @@ article > ol {
 
   #profile-pic {
     float: left;
-    margin-left: 30px;
-    max-width: 300px;
+    margin-left: 1.875em; /*30px/16 == 1.875em*/
+    max-width: 18.75em; /*300px/16 == 18.75em*/
   }
 
   #intro figure {
-    padding-bottom: 300px;
+    padding-bottom: 18.75em; /*300px/16 == 18.75em*/
   }
 
   #intro-description {
+    max-width: none;
     font-variant: normal;
     font-style: normal;
     font-weight: lighter;
     /*font-family: "Virtual", "Brush Script MT", serif;*/
-    font-family: 'Italianno', cursive;
-    margin-top: -80px;
-    font-size: 36px; /* 16px/16 == 1em */
-    line-height: 24px;
+    font-family: Italianno, cursive;
+    margin-top: -2.22222222em; /*80px/36 == 2.22222222em*/
+    font-size: 2.25em; /* 36px/16 == 2.25em */
+    line-height: 0.6666666667em; /*24px/36 == 0.6666666667em*/
     transform: scaleY(1.2);
-    letter-spacing: 1.5px; /* 4.194px/16 == 0.262em*/
+    letter-spacing: 0.04166666667em; /* 1.5px/36 == 0.04166666667em*/
   }
 
   #credits {
-    padding-top: 300px;
+    padding-top: 15.625em; /*250/16 == 15.625em*/
+  }
+
+  #credits article {
+    padding-bottom: 6.25em; /* 100px/16 == 6.25em*/
   }
 
 }
@@ -490,12 +497,11 @@ article > ol {
     display: block;
     position: absolute;
     margin-top: -14em;
-    padding-left: 70px;
+    padding-left: 4.375em; /*70px/16 == 4.375em*/
     box-shadow: none;
     margin-left: 66%;
     width: 27%;
   }
-
 
   #website-navigation a {
     margin-bottom: 0;
@@ -509,29 +515,23 @@ article > ol {
 
   #profile-pic {
     float: left;
-    margin-left: 100px;
+    margin-left: 6.25em; /*100px/16 == 6.25em*/
   }
 
-  #intro figure {
-    padding-bottom: 300px;
-  }
 
   #intro-description {
-    margin-top: -100px;
+    max-width: none;
+    margin-top: -2.0833333333em; /*100/48 == 2.0833333333em*/
     font-variant: normal;
     font-style: normal;
     font-weight: lighter;
     /*font-family: "Virtual", "Brush Script MT", serif;*/
-    font-family: 'Italianno', cursive;
-    font-size: 48px; /* 16px/16 == 1em */
+    font-family: Italianno, cursive;
+    font-size: 3em; /* 48px/16 == 3em */
     font-stretch: expanded;
     transform: scaleY(1.2);
-    line-height: 40px;
-    letter-spacing: 1.5px; /* 4.194px/16 == 0.262em*/
-  }
-
-  #credits {
-    padding-top: 300px;
+    line-height: 0.8333333333em; /*40px/48 == 0.8333333333em */
+    letter-spacing: 0.03125em; /*1.5px/48 == 0.03125em*/
   }
 
 }
