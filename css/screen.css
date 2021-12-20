@@ -314,6 +314,11 @@ article > ol {
   width: 500%;
 }
 
+.newsletter-image {
+  width: 200%;
+  box-shadow: none;
+}
+
 /* == State Rules == */
 @media screen and (min-width: 27.5em) /*440px/16 == 27.5em*/ {
 
@@ -517,7 +522,6 @@ article > ol {
     float: left;
     margin-left: 6.25em; /*100px/16 == 6.25em*/
   }
-
 
   #intro-description {
     max-width: none;
