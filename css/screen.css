@@ -208,7 +208,8 @@ img {
 }
 
 figure {
-  padding-top: 1.563em; /* 25px/16 == 1.563em */
+  padding-top: 1em; /*16/16 == 1em*/
+  padding-bottom: 1.563em; /* 25px/16 == 1.563em */
 }
 
 #page-navigation figure {
@@ -324,6 +325,16 @@ article > ol {
 .mockup {
   box-shadow: none;
 }
+
+.icon {
+  width: 30%;
+}
+
+#holmes-logo {
+margin-left: auto;
+margin-right: auto;
+}
+
 
 /* == State Rules == */
 @media screen and (min-width: 27.5em) /*440px/16 == 27.5em*/ {
