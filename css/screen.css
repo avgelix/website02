@@ -71,6 +71,10 @@ li {
   list-style: circle;
 }
 
+header {
+  margin-top: 0;
+}
+
 footer {
   padding-top: 3.4285714286em; /*48px/14 == 3.4285714286em*/
   text-align: center;
@@ -367,10 +371,6 @@ margin-right: auto;
     display: block;
     padding-left: 0;
     padding-right: 0;
-  }
-
-  header {
-    margin-top: 1.953em; /*31.25px/16 == 1.953em */
   }
 
   .page-nav li {
