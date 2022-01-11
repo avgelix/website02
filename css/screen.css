@@ -438,7 +438,7 @@ margin-right: auto;
 
   #intro-text {
     padding-bottom: 1.953em; /*31.25px == 1.953em */
-    margin-top: -170px; /*170/16 == 10.625em*/
+    margin-top: -15px; /*170/16 == 10.625em*/
   }
 
   #fiction p,
@@ -507,7 +507,7 @@ margin-right: auto;
   #profile-pic {
     float: left;
     margin-left: 1.875em; /*30px/16 == 1.875em*/
-    max-width: 15.625em; /*250px/16 == 15.625em*/
+    max-width: 14.375em; /*230px/16 == 15.625em*/
   }
 
   #intro figure {
@@ -532,6 +532,9 @@ margin-right: auto;
     padding-bottom: 6.25em; /* 100px/16 == 6.25em*/
   }
 
+  #intro-text {
+    margin-top: -150px;
+  }
 }
 
 @media screen and (min-width: 66.875em) /* 1070px/16 == 66.875em */ {
@@ -565,7 +568,7 @@ margin-right: auto;
   #profile-pic {
     float: left;
     margin-left: 3.75em; /*80px/16 == 3.75em*/
-    max-width: 14.375em; /*230px/16 == 15.625em*/
+    max-width: 15.625em; /*250px/16 == 15.625em*/
   }
 
   #intro-description {
@@ -583,7 +586,4 @@ margin-right: auto;
     letter-spacing: 0.03125em; /*1.5px/48 == 0.03125em*/
   }
 
-  #intro-text {
-    margin-top: -200px;
-  }
 }
