@@ -61,6 +61,7 @@ h4 {
 }
 
 h5 {
+  display: inline;
   font-weight: bolder;
   padding-bottom: 0.78125em; /*12.5px/16 == 0.78125em*/
   padding-top: 1.5625em; /* 25/16 == 1.5625em*/
