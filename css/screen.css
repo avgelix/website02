@@ -149,18 +149,15 @@ h5.odd-text {
 }
 /*Website Navigation Styling*/
 
-#page-navigation {
-  padding-bottom: 3.125em; /*50px/16 = 3.125em*/
-}
-
 #page-navigation li {
   list-style: none;
-  padding-bottom: 4.6875em;/*75px/16 == 4.6875em*/
+  padding-bottom: 2em;
 }
 
 #page-navigation .nav-button {
-  font-size: 1em; /*16/16px = 1em*/
+  font-size: 18px; /*16/16px = 1em*/
   text-decoration: none;
+  font-weight: 600;
   font-stretch: expanded;
   text-align: center;
   color: rgb(130, 12, 2);
@@ -175,7 +172,6 @@ h5.odd-text {
 
 #page-navigation figcaption {
   font-size: 0.875em; /* 14/16 == 0.875em */
-  letter-spacing: 0.10714286em; /* 1.5px/14 == 0.10714286em */
 }
 
 /* some interactivity */
@@ -410,8 +406,7 @@ margin-right: auto;
   }
 
   .main-container,
-  #page-navigation,
-  #about-me {
+  #page-navigation {
     padding-left: 10%;
     padding-right: 10%;
     margin-left: -1.953em; /*31.25px/16 == 1.953em */
@@ -460,8 +455,8 @@ margin-right: auto;
 
   .page-nav {
     display: flex;
-    justify-content: flex-start;
-    column-gap: 1.563em; /* 25px/16 == 1.563em */
+    justify-content: space-evenly;
+    column-gap: 3em;
     flex-flow: row wrap;
     flex-grow: 1;
     padding-top: 3.125em; /*50px/16 = 3.125em*/
@@ -502,7 +497,7 @@ margin-right: auto;
   }
 
   #page-navigation {
-    padding-top: 3.125em; /*50px/16 == 3.125em*/
+    padding-top: 1em; /*16px/16 == 1em*/
   }
 
   #about-me {
