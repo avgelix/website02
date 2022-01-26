@@ -358,6 +358,18 @@ margin-right: auto;
     justify-content: space-between;
   }
 
+  #about-me {
+    padding-top: 0;
+    padding-right: 5em;
+    padding-bottom: 5em;
+  }
+
+  #about-me > * {
+    border-left: 6px solid #EFA93F;
+    padding-left: 8px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
 }
 
 @media screen and (min-width: 37.5em) /* 600px/16 == 37.5em */ {
@@ -454,6 +466,20 @@ margin-right: auto;
     padding-top: 3.125em; /*50px/16 = 3.125em*/
   }
 
+  #about-me {
+    padding-top: 2em;
+    margin-left: 12%;
+    padding-bottom: 2em;
+    margin-right: 10%;
+  }
+
+  #about-me > * {
+    border-left: 6px solid #EFA93F;
+    padding-left: 8px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
 }
 
 @media screen and (min-width: 52.8125em) /* 845px/16 == 52.8125em */ {
@@ -497,9 +523,9 @@ margin-right: auto;
   }
 
   #about-me {
-    padding-top: 1.563em; /* 25px/16 == 1.563em */
     text-align: left;
-    width: 60%;
+    margin-left: 8%;
+    padding-right: 25em;
   }
 
   #profile-pic {
@@ -557,6 +583,13 @@ margin-right: auto;
 
   .page-nav li {
     width: 22%;
+  }
+
+  #about-me {
+    text-align: left;
+    width: 65%;
+    margin-left: 12%;
+    padding-right: 25em;
   }
 
   #profile-pic {
