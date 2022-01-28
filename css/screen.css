@@ -296,12 +296,12 @@ article > ol {
 }
 
 #intro-location {
-  padding-top: 25px;
+  padding-top: 5px;
   padding-bottom: 0;
 }
 
 #intro {
-  padding-bottom: 0;
+  padding-bottom: 15px;
 }
 
 #education {
