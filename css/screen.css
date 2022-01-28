@@ -340,9 +340,16 @@ article > ol {
   width: 30%;
 }
 
-#holmes-logo {
-margin-left: auto;
-margin-right: auto;
+#about-me {
+  padding-top: 0;
+  padding-bottom: 5em;
+}
+
+#about-me > * {
+  border-left: 6px solid #EFA93F;
+  padding-left: 8px;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 
 
