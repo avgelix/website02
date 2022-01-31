@@ -56,7 +56,7 @@ h3 {
 
 h4 {
   font-weight: bolder;
-  padding-bottom: 0.4096em; /* 8.192px/20px == 0.4096em */
+  padding-bottom: 0.512em; /* 8.192px/16px == 0.512em */
   font-size: 1.125em; /* 18px/16 == 1.125em*/
 }
 
@@ -65,7 +65,7 @@ h5 {
   font-weight: bolder;
   padding-bottom: 0.78125em; /*12.5px/16 == 0.78125em*/
   padding-top: 1.5625em; /* 25/16 == 1.5625em*/
-  text-shadow: 2px 2px black; /* 1px/28 == 0.03571429em*/ /* 3px/28 == 0.10714286em */
+  text-shadow: 0.125em 0.125em black; /* 2px/16 == 0.125em*/
 }
 
 li {
@@ -78,10 +78,10 @@ header {
 }
 
 footer {
+  font-size: 0.875em; /*14px/16 == 0.875em*/
   padding-top: 3.4285714286em; /*48px/14 == 3.4285714286em*/
   text-align: center;
   margin: -2.2321428571em; /* 31.25px/14 == 2.2321428571em */
-  font-size: 0.875em; /*14px/16 == 0.875em*/
   margin-top: 0.7142857143em; /* 10/14 == 0.7142857143em*/
 }
 
