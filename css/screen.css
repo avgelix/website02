@@ -621,6 +621,7 @@ article > ol {
   }
 
   @media screen and (min-width: 76.25em) /* 1220px/16 == 76.25em */ {
+
     #logo {
       display: block;
       position: absolute;
@@ -630,6 +631,10 @@ article > ol {
       box-shadow: none;
       margin-left: 67%;
       width: 30%;
+    }
+
+    #resume #logo {
+      margin-top: -18.5em;
     }
 
     header.h-card {
