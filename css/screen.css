@@ -545,6 +545,10 @@ article > ol {
     padding-bottom: 18.75em; /*300px/16 == 18.75em*/
   }
 
+  #intro-location {
+  padding-top: 10px;
+}
+
   #intro-description {
     max-width: none;
     font-variant: normal;
