@@ -685,7 +685,7 @@ article > ol {
     background-size: 100%;
     background-repeat: no-repeat;
     margin: -1.953em;
-    padding-bottom: 250px;
+    padding-bottom: 200px;
     margin-bottom: 1.953em;
   }
 
@@ -757,7 +757,7 @@ article > ol {
   }
 
   #home #banner {
-    padding-bottom: 350px;
+    padding-bottom: 300px;
   }
 
   #about-me {
@@ -821,6 +821,6 @@ article > ol {
     }
 
     #home #banner {
-      padding-bottom: 500px;
+      padding-bottom: 450px;
     }
   }
