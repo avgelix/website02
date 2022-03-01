@@ -388,6 +388,7 @@ article > ol {
 }
 
 #logo {
+  display: none;
   margin-top: -30px;
   float: right;
   width: 120px;
@@ -527,6 +528,9 @@ article > ol {
     margin-bottom: 44px;
   }
 
+  #logo {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 37.5em) /* 600px/16 == 37.5em */ {
