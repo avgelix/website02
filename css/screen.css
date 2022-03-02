@@ -683,6 +683,18 @@ article > ol {
     max-width: unset;
   }
 
+  .character-description {
+    column-count: 2;
+    margin-top: 10px;
+    list-style: none;
+  }
+
+  #portfolio-design figcaption{
+    font-style: italic;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
 }
 
 @media screen and (min-width: 700px) {
