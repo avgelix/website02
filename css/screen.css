@@ -471,13 +471,19 @@ article > ol {
  #what-i-am > section {
   max-width: 60%;
   margin: auto;
+  padding-top: 0px;
 }
 
  #what-i-am > section > p {
   margin: auto;
   width: 90%;
   text-align: center;
-  margin-top: 10px;
+  padding-bottom: 0;
+}
+
+  #what-i-am {
+  padding-top: 0;
+  margin-bottom: 66px;
 }
 
 #story-title {
@@ -503,7 +509,7 @@ article > ol {
     background-repeat: no-repeat;
     margin: -1.953em;
     padding-bottom: 100px;
-    margin-bottom: 0.2em;
+    margin-bottom: 0px;
   }
 
   #website-navigation a {
@@ -705,7 +711,7 @@ article > ol {
     background-repeat: no-repeat;
     margin: -1.953em;
     padding-bottom: 200px;
-    margin-bottom: 1.953em;
+    margin-bottom:0;
   }
 
   #about-me {
@@ -776,7 +782,7 @@ article > ol {
   }
 
   #home #banner {
-    padding-bottom: 300px;
+    padding-bottom: 320px;
   }
 
   #about-me {
