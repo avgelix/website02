@@ -442,8 +442,7 @@ article > ol {
   background-size: 100%;
   background-repeat: no-repeat;
   margin: -1.953em;
-  padding-bottom: 80px;
-  margin-bottom: 0.2em;
+  padding-bottom: 50px;
 }
 
 #home #banner > * {
@@ -457,8 +456,8 @@ article > ol {
 
 #what-i-am > section > img{
   padding-right: 30px;
-  max-width: 50px;
   box-shadow: none;
+  margin-bottom: -20px;
 }
 
 #links  {
@@ -491,6 +490,18 @@ article > ol {
 }
 
 /* == State Rules == */
+
+@media screen and (min-width: 400px)  {
+  #home #banner {
+    background-image: url(../good-website-images/home-banner-vertical.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: -1.953em;
+    padding-bottom: 100px;
+    margin-bottom: 0px;
+  }
+
+}
 @media screen and (min-width: 27.5em) /*440px/16 == 27.5em*/ {
 
   .image-gallery {
@@ -500,15 +511,6 @@ article > ol {
     grid-gap: 1.563em; /* 25px/16 == 1.563em */
     align-content: center;
     justify-content: space-between;
-  }
-
-  #home #banner {
-    background-image: url(../good-website-images/home-banner-vertical.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin: -1.953em;
-    padding-bottom: 100px;
-    margin-bottom: 0px;
   }
 
   #website-navigation a {
