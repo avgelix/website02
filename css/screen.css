@@ -381,7 +381,7 @@ article > ol {
   padding-bottom: 3.125em;/*50px/16 ==  3.125em*/
 }
 
-#home h3, #contacts{
+#home h3 {
   text-align: center;
   padding-top: 22px;
   border-bottom: 2px solid gray;
@@ -460,14 +460,6 @@ article > ol {
   margin-bottom: -20px;
 }
 
-#links  {
-  display: grid;
-  grid-auto-flow: column;
-  column-gap: 10px;
-  text-align: center;
-
-}
-
  #what-i-am > section {
   max-width: 60%;
   margin: auto;
@@ -489,6 +481,22 @@ article > ol {
   text-align: center;
 }
 
+#links  {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
+  width: 50%;
+}
+
+#links > p {
+  margin: 0;
+}
+
+
+.footer.icon {
+  min-width: 50px;
+  box-shadow: none;
+}
 /* == State Rules == */
 
 @media screen and (min-width: 400px)  {
@@ -647,7 +655,7 @@ article > ol {
     padding: 0;
   }
 
-  #home h3, #contacts{
+  #home h3 {
     margin: auto;
     width: 90%;
     border: none;
