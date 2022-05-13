@@ -381,7 +381,7 @@ article > ol {
   padding-bottom: 3.125em;/*50px/16 ==  3.125em*/
 }
 
-#home h3 {
+#home h3, #contacts {
   text-align: center;
   padding-top: 22px;
   border-bottom: 2px solid gray;
@@ -411,8 +411,8 @@ article > ol {
 
 #about-me {
   text-align: center;
-    margin-top: 10px;
-    margin-bottom: 22px;
+  margin-top: 10px;
+  margin-bottom: 22px;
 }
 
 #design-projects {
@@ -492,13 +492,13 @@ article > ol {
   margin: 0;
 }
 
-
 .footer.icon {
   min-width: 50px;
   box-shadow: none;
 }
-/* == State Rules == */
 
+
+/* == State Rules == */
 @media screen and (min-width: 400px)  {
   #home #banner {
     background-image: url(../good-website-images/home-banner-vertical.png);
@@ -655,7 +655,7 @@ article > ol {
     padding: 0;
   }
 
-  #home h3 {
+  #home h3, #contacts {
     margin: auto;
     width: 90%;
     border: none;
