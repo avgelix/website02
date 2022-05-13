@@ -485,7 +485,7 @@ article > ol {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: auto;
-  width: 50%;
+  width: 70%;
 }
 
 #links > p {
@@ -493,7 +493,7 @@ article > ol {
 }
 
 .footer.icon {
-  min-width: 50px;
+  min-width: 40px;
   box-shadow: none;
 }
 
@@ -638,11 +638,12 @@ article > ol {
     margin: auto;
     width: 90%;
     display: grid;
-    grid-template-columns: auto;
     grid-column-gap: 21px;
     grid-row-gap: 66px;
     padding-bottom: 0;
     margin-bottom: 22px;
+    grid-template-columns: auto auto;
+    padding-bottom: 22px;
   }
 
    .grid {
@@ -837,11 +838,6 @@ article > ol {
     transform: scaleY(1.2);
     line-height: 0.8333333333em; /*40px/48 == 0.8333333333em */
     letter-spacing: 0.03125em; /*1.5px/48 == 0.03125em*/
-  }
-
-  .grid {
-    grid-template-columns: auto auto;
-    padding-bottom: 22px;
   }
 
   #home #banner {
