@@ -29,7 +29,7 @@ html {
   color: #616161;
 }
 
-#resume {
+#CV {
   color: black;
 }
 
@@ -154,7 +154,7 @@ h5.odd-text {
   padding-top: 0.64em; /*10.24px/16 == 0.64em */
 }
 
-#resume footer {
+#CV footer {
   background-color: #ECECEC;
 }
 
@@ -570,8 +570,8 @@ article > ol {
     margin-top: -35px;
   }
 
-  #resume #education,
-  #resume #awards {
+  #CV #education,
+  #CV #awards {
     background-color: rgb(239, 169, 63, 0.5)
   }
 
